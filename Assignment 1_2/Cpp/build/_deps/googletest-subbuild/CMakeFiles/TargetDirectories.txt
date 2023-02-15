@@ -1,0 +1,3 @@
+/home/kazmisag/Documents/ECutbildining SW Developer/Data Structrued and Algo/MMUH22-Structures-Algoritm/Assignment 1_2/Cpp/build/_deps/googletest-subbuild/CMakeFiles/googletest-populate.dir
+/home/kazmisag/Documents/ECutbildining SW Developer/Data Structrued and Algo/MMUH22-Structures-Algoritm/Assignment 1_2/Cpp/build/_deps/googletest-subbuild/CMakeFiles/edit_cache.dir
+/home/kazmisag/Documents/ECutbildining SW Developer/Data Structrued and Algo/MMUH22-Structures-Algoritm/Assignment 1_2/Cpp/build/_deps/googletest-subbuild/CMakeFiles/rebuild_cache.dir
