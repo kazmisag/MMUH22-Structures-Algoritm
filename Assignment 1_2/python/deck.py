@@ -69,10 +69,13 @@ class Deck:
     @staticmethod
     def insert(card_list, card):
         """ Inserts a 'card' in the correct spot in the deck 'card_list' """
+        i=0
+        for index in range(len(card_list)):
+            if card < card_list[index]:
+                i=index
+                break
 
-        ###################
-        # Your code here! #
-        ###################
+        card_list.insert(i, card)
 
         return card_list
 
@@ -83,9 +86,11 @@ class Deck:
 
         while len(self.cards) > 0:
             # Go through the deck from left to right, insert the deck in the appropriate spot
-            self.insert(sorted_deck, self.take())  # Take a card from the old deck, insert it into the new one
+            # Take a card from the old deck, insert it into the new one
+            self.insert(sorted_deck, self.take())
 
-        self.cards = sorted_deck  # Replace the old (empty) deck with the new (sorted) one
+        # Replace the old (empty) deck with the new (sorted) one
+        self.cards = sorted_deck
 
     def take(self):
         """ Take the top card from the deck """
@@ -107,10 +112,7 @@ if __name__ == '__main__':
     deck.sort()
     print('Sorted deck:', deck)
 
-
     deck.shuffle()
     print('Shuffled deck:', deck)
     deck.python_sort()
     print('Python Sorted deck:', deck)
-
-    

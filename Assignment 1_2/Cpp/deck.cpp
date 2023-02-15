@@ -154,14 +154,14 @@ void Deck::insert(vector<Card> &cardlist, Card card)
     /**********SOLUTION:1******************/
     ////////////////////////////////////////
 
-    int index = 0;
-    for (int i; i < cardlist.size(); ++i)
+    int i = 0;
+    for (; i < cardlist.size(); ++i)
     {
         if (card < cardlist[i])
-            index = i;
-        break;
+            // index = i;
+            break;
     }
-    cardlist.insert(cardlist.begin() + index, card);
+    cardlist.insert(cardlist.begin() + i, card);
 
     /********SOLUTION: 2******/
     //////////////////////////
