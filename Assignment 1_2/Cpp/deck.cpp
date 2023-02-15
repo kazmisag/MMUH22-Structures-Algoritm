@@ -154,13 +154,12 @@ void Deck::insert(vector<Card> &cardlist, Card card)
     /**********SOLUTION:1******************/
     ////////////////////////////////////////
 
-    // find the index of the first card in the list that is >= to the card to insert
     int index = 0;
     for (int i; i < cardlist.size(); ++i)
     {
         if (card < cardlist[i])
             index = i;
-            break;
+        break;
     }
     cardlist.insert(cardlist.begin() + index, card);
 
