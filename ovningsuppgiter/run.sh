@@ -1,2 +1,2 @@
-g++ bubble_sort.cpp -o main &&./main
+g++ tree.cpp -o main &&./main
 
